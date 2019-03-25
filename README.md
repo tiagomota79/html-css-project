@@ -41,7 +41,7 @@ Following the first point, it's fine to struggle on a feature which you want to 
 
 You will have a PASS / FAIL on each grading rubric and a final PASS / FAIL grade for the module. The final grade is based on your project and the effort put into it. If some things are missing / don't look exactly right but I see you are going in the right direction and have made a real effort, you will be ok.
 
-## Deadline
+### Deadline
 
 You have until the start of the next module (next Tuesday) to submit this project (push it on a new repository called **html-css-project**).
 
@@ -65,25 +65,35 @@ Here are some of the CSS properties used for the project (this is not a full lis
 ---
 
 `background-color`  
-You can use rgba to make transparent colors. **a** is the transparency value. Example: `background-color: rgba(0,0,0,0.5);`  
+You can use rgba to make transparent colors. **a** is the transparency value. Example: `background-color: rgba(0,0,0,0.5);`
+
 `object-fit`  
-Size an <img> element like you would a background image, with properties like **cover** (automatically zoom in / out to cover the whole area), **contain**, etc.  
+Size an <img> element like you would a background image, with properties like **cover** (automatically zoom in / out to cover the whole area), **contain**, etc.
+
 `object-position`  
-Works like `background-position`  
+Works like `background-position`
+
 `-webkit-appearance: none`  
-Some elements (e.g. checkbox input) cannot be styled. Using this CSS property, the functionality of the element is kept but the look of the element can be created from scratch. The _webkit_ prefix is to use the chrome implementation of the `appearance` CSS property.  
+Some elements (e.g. checkbox input) cannot be styled. Using this CSS property, the functionality of the element is kept but the look of the element can be created from scratch. The _webkit_ prefix is to use the chrome implementation of the `appearance` CSS property.
+
 `background-image`  
-For gradient backgrounds, use `linear-gradient(direction, color1, color2)`. Example: `background-image: linear-gradient(to right, #fff, blue);`  
+For gradient backgrounds, use `linear-gradient(direction, color1, color2)`. Example: `background-image: linear-gradient(to right, #fff, blue);`
+
 `border-top-right-radius`  
-You can specify `border-radius` on specific corners (top-left, top-right, bottom-left, bottom-right)  
+You can specify `border-radius` on specific corners (top-left, top-right, bottom-left, bottom-right)
+
 `transform`  
-If you want to apply multiple transform effects (e.g. translate and rotate), the syntax is: `transform: translate() rotate()`  
+If you want to apply multiple transform effects (e.g. translate and rotate), the syntax is: `transform: translate() rotate()`
+
 `transform-origin`  
-Use this to specify from which point a transform should happen (e.g. scale from the left, center, or right of the element)  
+Use this to specify from which point a transform should happen (e.g. scale from the left, center, or right of the element)
+
 `transition`  
-If you want to apply transitions on multiple properties, the syntax is: `transition: property_name duration easing_function, property_name2 duration easing_function`  
+If you want to apply transitions on multiple properties, the syntax is: `transition: property_name duration easing_function, property_name2 duration easing_function`
+
 `keyframes`  
-Use to make animations. **from** is like `0%` and **to** is like `100%`. You can add as many keyframes as you want (e.g. `from{} 50%{} 80%{} 90%{} to{}`). You can also add keyframes in media queries, just use the same name to override the existing keyframe.  
+Use to make animations. **from** is like `0%` and **to** is like `100%`. You can add as many keyframes as you want (e.g. `from{} 50%{} 80%{} 90%{} to{}`). You can also add keyframes in media queries, just use the same name to override the existing keyframe.
+
 `grid-auto-rows`  
 Use this to specify the height of new grid rows (vs. `grid-template-rows` where you specify an explicit amount of rows and their size)
 
