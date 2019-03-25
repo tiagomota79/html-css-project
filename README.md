@@ -65,13 +65,13 @@ Here are some of the CSS properties used for the project (this is not a full lis
 ---
 
 `background-color`  
-You can use rgba to make transparent colors. **a** is the transparency value. Example: `background-color: rgba(0,0,0,0.5);`
+You can use **rgba** to make transparent colors. **a** is the transparency value. e.g. `background-color: rgba(0,0,0,0.5);`
 
 `object-fit`  
 Size an <img> element like you would a background image, with properties like **cover** (automatically zoom in / out to cover the whole area), **contain**, etc.
 
 `object-position`  
-Works like `background-position`
+Can be used like the `background-position` property
 
 `-webkit-appearance: none`  
 Some elements (e.g. checkbox input) cannot be styled. Using this CSS property, the functionality of the element is kept but the look of the element can be created from scratch. The _webkit_ prefix is to use the chrome implementation of the `appearance` CSS property.
