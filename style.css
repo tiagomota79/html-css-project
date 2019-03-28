@@ -17,6 +17,7 @@ body {
 .icon {
     max-height: 50px;
     margin-left: 25px;
+    transition: opacity 0.2s ease-in-out;
 }
 
 /* Menu items styling */
@@ -29,6 +30,10 @@ body {
 }
 
 /* Menu hover animation */
+.icon:hover {
+    opacity: 0.5;
+}
+
 .menuitems > a:hover {
     opacity: 0.5;
 }
@@ -66,12 +71,14 @@ body {
     margin: none;
 }
 
+}
+
 /* Hero box styling */
 
-.title { grid-area: title;}
-.slogan { grid-area: slogan;}
-.p1 { grid-area: p1;}
-.p2 { grid-area: p2;}
+.titlebox { grid-area: title;}
+.sloganbox { grid-area: slogan;}
+.p1box { grid-area: p1;}
+.p2box { grid-area: p2;}
 
 .box {
     display: grid;
@@ -82,16 +89,28 @@ body {
     "title p1 p2";
     margin: 120px;
     border: solid white 5px;
-    padding: 20px;
     color: white;
 }
 
+/* Individual inner boxes styling */
 .title {
     font-size: 4rem;
+    padding: 30px;
 }
 
-.slogan {
+.sloganbox {
     border-bottom: dashed 1px;
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.p1box {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.p2box {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
