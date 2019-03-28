@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Navbar styling */
+.nav {
+    display: flex;
+    background-color: #3a3633;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    position: relative;
+}
+
+/* Icon sizing and margin */
+.icon {
+    max-height: 50px;
+    margin-left: 25px;
+}
+
+/* Menu items styling */
+.menuitems > a {
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Menu hover animation */
+.menuitems > a:hover {
+    opacity: 0.5;
+}
+
+/* Dropdown styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #3a3633;
+    text-decoration: none;
+}
+
+/* Dropdown action */
+.dropdown a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+  }
+
+/* Dropdown show on hover */
+.nav:hover .dropdown {
+    display: block;
+}
+  
+.dropdown a:hover {
+    background-color: #5f5c5a;
+}
+
+ /* Hero main styling */
+.hero {
+    display: grid;
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+    margin: none;
+}
+
+/* Hero box styling */
+
+.title { grid-area: title;}
+.slogan { grid-area: slogan;}
+.p1 { grid-area: p1;}
+.p2 { grid-area: p2;}
+
+.box {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "title slogan slogan"
+    "title p1 p2";
+    margin: 120px;
+    border: solid white 5px;
+    padding: 20px;
+    color: white;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.slogan {
+    border-bottom: dashed 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+}
