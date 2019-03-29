@@ -9,7 +9,6 @@ body {
     background-color: #3a3633;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
     position: relative;
 }
 
@@ -21,6 +20,11 @@ body {
 }
 
 /* Menu items styling */
+.menuitems {
+    display: flex;
+    height: 100%;
+}
+
 .menuitems > a {
     text-decoration: none;
     color: white;
@@ -29,14 +33,15 @@ body {
     transition: opacity 0.2s ease-in-out;
 }
 
-/* Menu hover animation */
-.icon:hover {
-    opacity: 0.5;
+.menuitems > div {
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: opacity 0.2s ease-in-out;
 }
 
-.menuitems > a:hover {
-    opacity: 0.5;
-}
+/* Menu hover animation */
 
 /* Dropdown styling */
 .dropdown {
@@ -44,6 +49,7 @@ body {
     position: absolute;
     background-color: #3a3633;
     text-decoration: none;
+    top: 100%;
 }
 
 /* Dropdown action */
@@ -55,7 +61,7 @@ body {
   }
 
 /* Dropdown show on hover */
-.nav:hover .dropdown {
+.menu:hover > .dropdown {
     display: block;
 }
   
@@ -71,10 +77,7 @@ body {
     margin: none;
 }
 
-}
-
 /* Hero box styling */
-
 .titlebox { grid-area: title;}
 .sloganbox { grid-area: slogan;}
 .p1box { grid-area: p1;}
@@ -82,35 +85,217 @@ body {
 
 .box {
     display: grid;
-    grid-template-columns: 40% 30% 30%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-template-areas:
-    "title slogan slogan"
-    "title p1 p2";
+    "title title"
+    "slogan slogan"
+    "p1 p2";
     margin: 120px;
-    border: solid white 5px;
-    color: white;
+    border: solid #ffffff 5px;
+    color: #ffffff;
 }
 
 /* Individual inner boxes styling */
 .title {
-    font-size: 4rem;
+    font-size: 2rem;
+    font-weight: bolder;
     padding: 30px;
+    text-align: center;
 }
 
 .sloganbox {
     border-bottom: dashed 1px;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 2.5rem;
+    background-color: #00000085;
+    font-size: 1.2rem;
     padding: 20px;
+    text-align: center;
 }
 
 .p1box {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #00000085;
 }
 
 .p2box {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #00000085;
+}
+
+/* Features section styling */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featuresBox {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px #8f8f8f;
+    padding: 20px;
+    margin: 50px;
+    width: 50%;
+    height: 50%;
+}
+
+.featuresBox img {
+    min-height: 50px;
+}
+
+.featuresBox h5 {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.featuresBox p {
+    color: #696969;
+    text-align: center;
+}
+
+.button {
+    color: #ffffff;
+    background: #3a3633;
+    font-size: 1rem;
+    text-decoration: none;
+    min-height: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+}
+
+/* Cool section styling */
+.cool {
+    background-color: #3a3633;
+    color: #ffffff;
+    padding: 3%;
+    padding-bottom: 15%;
+}
+
+.cool h2 {
+    font-size: 4rem;
+}
+
+.cool p {
+    font-size: 2rem;
+}
+
+/* Floater styling */
+.floater {
+    float: left;
+    padding: 1%;
+    margin-top: -7%;
+    margin-left: 3%;
+    background-color: #3a3633;
+    border: solid #ffffff 10px;
+    text-align: center;
+    width: 20%;
+    padding: -20%;
+    box-shadow: 0px 2px 5px #5f5c5a
+}
+
+.floater h2 {
+    color: #c00000;
+}
+
+.floater p {
+    color: #ffffff;
+}
+
+/* Gradient section styling */
+.gradient {
+    background-image: linear-gradient(to right, #ffffff, #0066aa);
+    padding: 3%;
+    text-align: right;
+    color: #ffffff
+}
+
+.gradient h2 {
+    font-size: 4rem;
+}
+
+.gradient p {
+    font-size: 2rem;
+}
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    height: 10%;
+}
+
+@media (min-width: 768px) {
+.box {
+    grid-template-areas:
+    "title title"
+    "slogan slogan"
+    "p1 p2";
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.sloganbox {
+    font-size: 2rem;
+}
+
+.features {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 1200px) {
+
+.nav {
+    position: sticky;
+    top: 0;
+}
+
+.box {
+    grid-template-columns: 40% 30% 30%;
+    grid-template-areas:
+    "title slogan slogan"
+    "title p1 p2";
+}
+
+.title {
+    font-size: 4rem;
+    text-align: left;
+}
+
+.sloganbox {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.features {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 5px #0066aa;
+}
+
+.floater:hover {
+    animation: random 1.5s ease-in-out;
+}
+
+@keyframes random{
+    from {
+        transform: translate(0%) rotate(0deg) rotateX(0deg)
+    }
+
+    50% {
+        transform: translate(150%) rotate(180deg) rotateX(180deg) rotateY(180deg)
+    }
+    
+    to {
+        transform: translate(0%) rotate(360deg) rotateX(0deg) rotateY(0deg)
+    }
 }
