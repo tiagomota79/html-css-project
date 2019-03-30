@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mailing {
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    margin: 4% auto;
+}
+
+.mailing div {
+    margin: 10px;
+}
+.email-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #3a3633;
+    background-color: #3a3633;
+    width: 100%;
+}
+
+input[type=email] {
+    border-color: #ffffff00;
+    border-radius: 2px;
+    padding: 5px;
+    width: 190px;
+}
+
+button {
+
+}
+
+.icon {
+    margin: 4px;
+}
