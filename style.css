@@ -16,29 +16,33 @@ body {
 .icon {
     max-height: 50px;
     margin-left: 25px;
-    transition: opacity 0.2s ease-in-out;
 }
 
 /* Menu items styling */
 .menuitems {
     display: flex;
-    height: 100%;
 }
 
 .menuitems > a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: white;
+    height: 55px;
     margin-left: 40px;
     margin-right: 40px;
-    transition: opacity 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
 }
 
 .menuitems > div {
+    display: flex;
+    align-items: center;
+    height: 55px;
     text-decoration: none;
     color: white;
     margin-left: 40px;
     margin-right: 40px;
-    transition: opacity 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
 }
 
 /* Menu hover animation */
@@ -52,19 +56,6 @@ body {
     top: 100%;
 }
 
-/* Dropdown action */
-.dropdown a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 15px;
-  }
-
-/* Dropdown show on hover */
-.menu:hover > .dropdown {
-    display: block;
-}
-  
 .dropdown a:hover {
     background-color: #5f5c5a;
 }
@@ -221,12 +212,6 @@ body {
     font-size: 2rem;
 }
 
-/* Gallery styling */
-.gallery {
-    display: flex;
-    height: 10%;
-}
-
 @media (min-width: 768px) {
 .box {
     grid-template-areas:
@@ -248,12 +233,92 @@ body {
     justify-content: space-evenly;
 }
 
+.row {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.column {
+    height: 250px;
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.img {
+    height: 100%;
+}
+
+#img1 {
+    background: url(imgs/tesla.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#img2 {
+    background: url(imgs/procat.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#img3 {
+    background: url(imgs/hyperloop.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#img4 {
+    background: url(imgs/sneakycat.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#img5 {
+    background: url(imgs/bfr.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#img6 {
+    background: url(imgs/funnycat.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000050;
+}
+
 @media (min-width: 1200px) {
 
 .nav {
     position: sticky;
     top: 0;
 }
+
+/* Dropdown action */
+.dropdown a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+  }
+
+/* Dropdown show on hover */
+.menu:hover > .dropdown {
+    display: block;
+}
+
 
 .box {
     grid-template-columns: 40% 30% 30%;
@@ -298,4 +363,83 @@ body {
     to {
         transform: translate(0%) rotate(360deg) rotateX(0deg) rotateY(0deg)
     }
+}
+/* Gallery styling */
+.row {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.column {
+    height: 300px;
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.img {
+    width: 33.33vw;
+    height: 100%;
+    transition: .2s ease-in-out;
+}
+
+#img1 {
+    background: url(imgs/tesla.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#img2 {
+    background: url(imgs/procat.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#img3 {
+    background: url(imgs/hyperloop.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#img4 {
+    background: url(imgs/sneakycat.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#img5 {
+    background: url(imgs/bfr.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#img6 {
+    background: url(imgs/funnycat.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    transition: .2s ease-in-out;
+}
+
+.column:hover > div {
+    transform: scale(1.1);
+}
+
+.column:hover > .overlay {
+    display: flex;
+}
+
 }

@@ -12,9 +12,9 @@
         </div>
         <div class="space"></div>
         <div class="menuitems">
-            <a href="#" class="menu">Features</a>
-            <a href="#" class="menu">Advantages</a>
-            <a href="#" class="menu">Gallery</a>
+            <a href="#features" class="menu">Features</a>
+            <a href="#advantages" class="menu">Advantages</a>
+            <a href="#gallery" class="menu">Gallery</a>
             <div class="menu">Products
                 <div class="dropdown">
                     <a href="#">Falcon</a>
@@ -40,7 +40,7 @@
             </div>                                             
         </div>
    </div>
-   <div class="features">
+   <div class="features" id="features">
        <div class="featuresBox">
            <img src="imgs/icon1.svg">
            <h5>Amazing feature 1</h5>
@@ -60,7 +60,7 @@
            <a href="#" class="button">Do it</a>
         </div>
    </div>
-   <div class="cool">
+   <div class="cool" id="advantages">
        <h2>Some cool text</h2>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem integer vitae justo eget.</p>
    </div>
@@ -73,31 +73,34 @@
        <p>Lorem ipsum?</p>
    </div>
    <div class="gallery">
-       <div class="tesla">
-            <img src="imgs/tesla.jpg">
-            <div>Our flagship car: the Model S</div>
-       </div>
-       <div class="cat1">
-           <img src="imgs/procat.jpg">
-           <div>Cool cat</div>
-       </div>
-       <div class="hyperloop">
-           <img src="imgs/hyperloop.jpg">
-           <div>Introducing: the Hyperloop</div>
-       </div>
-       <div class="cat2">
-           <img src="imgs/sneakycat.jpg">
-           <div>So sneaky</div>
-       </div>
-       <div class="bfr">
-           <img src="imgs/bfr.jpeg">
-           <div>BFR: Big Falcon Rocket</div>
-       </div>
-       <div class="cat3">
-           <img src="imgs/funnycat.jpg">
-           <div>So much fun</div>
-       </div>
-   </div>
+        <div class="row" id="gallery">
+                <div class="column">
+                    <div class="img" id="img1"></div>
+                    <div class="overlay">Our flasgship car: the Model S</div>
+                </div>
+                <div class="column">
+                    <div class="img" id="img2"></div>
+                    <div class="overlay">Cool cat</div>
+                </div>
+                <div class="column">
+                    <div class="img" id="img3"></div>
+                    <div class="overlay">Introducing: the Hyperlook</div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="column">
+                        <div class="img" id="img4"></div>
+                        <div class="overlay">So sneaky</div>
+                    </div>
+                    <div class="column">
+                        <div class="img" id="img5"></div>
+                        <div class="overlay">BFG: Big Falcon Rocket</div>
+                    </div>
+                    <div class="column">
+                        <div class="img" id="img6"></div>
+                        <div class="overlay">So miuch fun</div>
+                    </div>
+            </div>
    <div class="mailing">
        <div>Register to our mailing list</div>
        <div class="email-box">
