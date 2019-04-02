@@ -77,7 +77,7 @@ body {
     "title title"
     "slogan slogan"
     "p1 p2";
-    margin: 50px;
+    margin: 60px;
     border: solid #ffffff 5px;
     color: #ffffff;
 }
@@ -343,6 +343,14 @@ button {
 
 .sloganbox {
     font-size: 2rem;
+}
+
+.p1box {
+    font-size: 1rem;
+}
+
+.p2box {
+    font-size: 1rem;
 }
 
 .features {
