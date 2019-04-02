@@ -34,9 +34,10 @@ input[type=email] {
 }
 
 button {
-
+    background: #ffffff00;
+    border: #ffffff00;
 }
 
-.icon {
+/* .icon {
     margin: 4px;
-}
+} */
